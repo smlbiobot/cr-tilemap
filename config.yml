@@ -1,0 +1,3 @@
+tilemaps:
+  - name: default
+    csv: ./lib/cr-csv/assets/tilempas/timemap.csv
