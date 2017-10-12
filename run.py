@@ -9,7 +9,7 @@ import subprocess
 import re
 import json
 from reportlab.pdfgen import canvas
-from reportlab.lib.units import cm
+from reportlab.lib.units import pica
 
 import yaml
 from box import Box
@@ -52,9 +52,9 @@ class App:
     def draw_tile(self, c, x, y, value):
         w = 1
         h = 1
-        s = 0.3 * cm
-        x0 = 1 * cm
-        y0 = 1 * cm
+        s = 0.5 * pica
+        x0 = 1 * pica
+        y0 = 1 * pica
         c.setLineWidth(0.3)
         c.setStrokeColorRGB(0.2, 0.2, 0.2)
         c.setFillColorRGB(*self.colors[value])
