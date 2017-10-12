@@ -52,7 +52,7 @@ class App:
     def draw_tile(self, c, x, y, value):
         w = 1
         h = 1
-        s = 0.5 * pica
+        s = 1 * pica
         x0 = 1 * pica
         y0 = 1 * pica
         c.setLineWidth(0.3)
