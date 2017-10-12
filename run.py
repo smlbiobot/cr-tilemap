@@ -60,12 +60,15 @@ class App:
         c.setFillColorRGB(*self.colors[value])
         c.rect(x0 + x * s, y0 + y * s, w * s, h * s, fill=1)
 
-    def make_tilemap(self, config):
+    def make_tilemap(self, name):
         """Generate tilemap from csv to pdf."""
 
-        c = canvas.Canvas(config.pdf, bottomup=0)
+        pdf_file = os.path.join(self.config.pdf_folder, name + '.pdf')
+        csv_file = os.path.join(self.config.csv_folder, name + '.csv')
 
-        with open(config.csv) as f:
+        c = canvas.Canvas(pdf_file, bottomup=0)
+
+        with open(csv_file) as f:
             reader = csv.reader(f)
             y = 0
             start = -10000
@@ -91,7 +94,7 @@ class App:
         c.save()
 
         if self.config.openfile:
-            subprocess.call(['open', config.pdf])
+            subprocess.call(['open', pdf_file])
 
 
 if __name__ == '__main__':
