@@ -1,3 +1,7 @@
 tilemaps:
   - name: default
-    csv: ./lib/cr-csv/assets/tilempas/timemap.csv
+    csv: ./lib/cr-csv/assets/tilemaps/tilemap.csv
+    pdf: ./dst/tilemap.pdf
+
+openfile: True
+
