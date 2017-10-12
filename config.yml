@@ -1,7 +1,25 @@
 tilemaps:
-  - name: default
+  - name: tilemap
     csv: ./lib/cr-csv/assets/tilemaps/tilemap.csv
     pdf: ./dst/tilemap.pdf
+  - name: tilemap_2v2
+    csv: ./lib/cr-csv/assets/tilemaps/tilemap_2v2.csv
+    pdf: ./dst/tilemap_2v2.pdf
+  - name: tilemap_pve
+    csv: ./lib/cr-csv/assets/tilemaps/tilemap_pve.csv
+    pdf: ./dst/tilemap_pve.pdf
+  - name: tilemap_pve1
+    csv: ./lib/cr-csv/assets/tilemaps/tilemap_pve1.csv
+    pdf: ./dst/tilemap_pve1.pdf
+  - name: tilemap_touchdown
+    csv: ./lib/cr-csv/assets/tilemaps/tilemap_touchdown.csv
+    pdf: ./dst/tilemap_touchdown.pdf
+  - name: tilemap_touchdown_2v2
+    csv: ./lib/cr-csv/assets/tilemaps/tilemap_touchdown_2v2.csv
+    pdf: ./dst/tilemap_touchdown_2v2.pdf
+  - name: tilemap_tve
+    csv: ./lib/cr-csv/assets/tilemaps/tilemap_tve.csv
+    pdf: ./dst/tilemap_tve.pdf
 
 openfile: True
 
